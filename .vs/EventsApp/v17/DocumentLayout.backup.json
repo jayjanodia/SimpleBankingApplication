@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jay.janodia\\source\\repos\\eventsapp\\eventsapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jay.janodia\\source\\repos\\eventsapp\\eventsapp\\style\\customstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\style\\customstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jay.janodia\\source\\repos\\eventsapp\\eventsapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jay.janodia\\source\\repos\\eventsapp\\eventsapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\App.xaml",
+              "RelativeDocumentMoniker": "EventsApp\\App.xaml",
+              "ToolTip": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\App.xaml",
+              "RelativeToolTip": "EventsApp\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T22:35:50.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "customStyle.xaml",
+              "DocumentMoniker": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\Style\\customStyle.xaml",
+              "RelativeDocumentMoniker": "EventsApp\\Style\\customStyle.xaml",
+              "ToolTip": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\Style\\customStyle.xaml",
+              "RelativeToolTip": "EventsApp\\Style\\customStyle.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T22:32:11.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "EventsApp\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\MainWindow.xaml",
+              "RelativeToolTip": "EventsApp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-06T21:48:23.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EventsApp\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "EventsApp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T21:48:20.856Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
