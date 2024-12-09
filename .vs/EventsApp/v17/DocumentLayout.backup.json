@@ -1,22 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\",
+  "WorkspaceRootPath": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jay.janodia\\source\\repos\\eventsapp\\eventsapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jayja\\documents\\c-sharp\\simplebankingapplication\\eventsapp\\bankingdemo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\bankingdemo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jay.janodia\\source\\repos\\eventsapp\\eventsapp\\style\\customstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\style\\customstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jayja\\documents\\c-sharp\\simplebankingapplication\\eventsapp\\atm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\atm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jay.janodia\\source\\repos\\eventsapp\\eventsapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jayja\\documents\\c-sharp\\simplebankingapplication\\eventsapp\\bankingdemo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\bankingdemo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jay.janodia\\source\\repos\\eventsapp\\eventsapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E1998C5-D251-4964-871C-32C650F749A9}|Libraries\\Libraries.csproj|c:\\users\\jayja\\documents\\c-sharp\\simplebankingapplication\\libraries\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E1998C5-D251-4964-871C-32C650F749A9}|Libraries\\Libraries.csproj|solutionrelative:libraries\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|c:\\users\\jayja\\documents\\c-sharp\\simplebankingapplication\\eventsapp\\atm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{70B2965E-E765-4694-A7D7-37765D5F64E0}|EventsApp\\EventsApp.csproj|solutionrelative:eventsapp\\atm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\EventsApp\\obj\\Debug\\net8.0-windows\\BankingDemo.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventsApp\\obj\\Debug\\net8.0-windows\\BankingDemo.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +34,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\Libraries\\Account.cs",
+              "RelativeDocumentMoniker": "Libraries\\Account.cs",
+              "ToolTip": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\Libraries\\Account.cs",
+              "RelativeToolTip": "Libraries\\Account.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAswE0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T21:25:04.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BankingDemo.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\EventsApp\\obj\\Debug\\net8.0-windows\\BankingDemo.g.i.cs",
+              "RelativeDocumentMoniker": "EventsApp\\obj\\Debug\\net8.0-windows\\BankingDemo.g.i.cs",
+              "ToolTip": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\EventsApp\\obj\\Debug\\net8.0-windows\\BankingDemo.g.i.cs",
+              "RelativeToolTip": "EventsApp\\obj\\Debug\\net8.0-windows\\BankingDemo.g.i.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAI4AAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T20:50:24.814Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\App.xaml",
-              "RelativeDocumentMoniker": "EventsApp\\App.xaml",
-              "ToolTip": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\App.xaml",
-              "RelativeToolTip": "EventsApp\\App.xaml",
+              "Title": "BankingDemo.xaml",
+              "DocumentMoniker": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\EventsApp\\BankingDemo.xaml",
+              "RelativeDocumentMoniker": "EventsApp\\BankingDemo.xaml",
+              "ToolTip": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\EventsApp\\BankingDemo.xaml",
+              "RelativeToolTip": "EventsApp\\BankingDemo.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T22:35:50.122Z",
+              "WhenOpened": "2024-12-08T20:45:29.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "customStyle.xaml",
-              "DocumentMoniker": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\Style\\customStyle.xaml",
-              "RelativeDocumentMoniker": "EventsApp\\Style\\customStyle.xaml",
-              "ToolTip": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\Style\\customStyle.xaml",
-              "RelativeToolTip": "EventsApp\\Style\\customStyle.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T22:32:11.542Z",
+              "Title": "ATM.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\EventsApp\\ATM.xaml.cs",
+              "RelativeDocumentMoniker": "EventsApp\\ATM.xaml.cs",
+              "ToolTip": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\EventsApp\\ATM.xaml.cs",
+              "RelativeToolTip": "EventsApp\\ATM.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T19:39:56.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "EventsApp\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\MainWindow.xaml",
-              "RelativeToolTip": "EventsApp\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-06T21:48:23.395Z",
+              "Title": "BankingDemo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\EventsApp\\BankingDemo.xaml.cs",
+              "RelativeDocumentMoniker": "EventsApp\\BankingDemo.xaml.cs",
+              "ToolTip": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\EventsApp\\BankingDemo.xaml.cs",
+              "RelativeToolTip": "EventsApp\\BankingDemo.xaml.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwE4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T19:26:20.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "EventsApp\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\jay.janodia\\source\\repos\\EventsApp\\EventsApp\\MainWindow.xaml.cs",
-              "RelativeToolTip": "EventsApp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:48:20.856Z",
+              "DocumentIndex": 4,
+              "Title": "ATM.xaml",
+              "DocumentMoniker": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\EventsApp\\ATM.xaml",
+              "RelativeDocumentMoniker": "EventsApp\\ATM.xaml",
+              "ToolTip": "C:\\Users\\jayja\\Documents\\C-Sharp\\SimpleBankingApplication\\EventsApp\\ATM.xaml",
+              "RelativeToolTip": "EventsApp\\ATM.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-08T19:23:37.393Z",
               "EditorCaption": ""
             }
           ]
