@@ -28,6 +28,16 @@ namespace EventsApp
             this._customer = customer;
 
             lblCustomer.Content = _customer.CustomerName;
+            if (this._customer.CheckingAccount != null)
+            {
+                this._customer.CheckingAccount.OverdraftEvent += CheckingAccount_OverdraftEvent;
+            }
+        }
+
+        private void CheckingAccount_OverdraftEvent(object? sender, OverdraftEventArgs e)
+        {
+            lblErrorMsg.Content = $"Overdraft protection transfer of {string.Format("{0:C2}", e.AmountOverdrafted)}";
+            lblErrorMsg.Visibility = Visibility.Visible;
         }
 
         private void btnMakePurchase_Click(object sender, RoutedEventArgs e)
@@ -35,8 +45,24 @@ namespace EventsApp
             // decimal amount = amountVal.Value.HasValue ? (decimal)amountVal.Value.Value : 0; // useful if we are unsure if amountVal.Value will ever be null or not
 
             decimal amount = (decimal)(amountVal.Value ?? 0);
-            bool payment = _customer.CheckingAccount.MakePayment("Credit Card Purchase", amount, _customer.SavingsAccount);
+
+            if (amount == 0)
+            {
+                Console.WriteLine("Amount is 0, cannot or should not withdraw anything");
+                MessageBox.Show("Please enter a valid amount", "Insufficient amount entered", MessageBoxButton.OK, MessageBoxImage.Stop);
+                return;
+            }
+
+            if (_customer.CheckingAccount != null && _customer.SavingsAccount != null)
+            {
+                bool payment = _customer.CheckingAccount.MakePayment("Credit Card Purchase", amount, _customer.SavingsAccount);
+            }
             amountVal.Value = 0;
+        }
+        
+        private void lblErrorMsg_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            lblErrorMsg.Visibility = Visibility.Hidden; // Or Visibility.Collapsed for getting rid of the reserved space
         }
     }
 }

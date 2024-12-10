@@ -6,9 +6,11 @@
     xmlns:local="clr-namespace:EventsApp"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
-    Title="Window1"
+    Title="ATM"
     Width="400"
     Height="400"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
     <Grid>
         <Grid.RowDefinitions>
@@ -16,6 +18,7 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -33,9 +36,23 @@
             Grid.Row="1"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Content="Customer"
+            Content="Customer Name:"
             FontSize="18"
             FontWeight="Bold" />
+        <Label
+            x:Name="lblErrorMsg"
+            Grid.Row="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Content="Overdraft protection transfer of $0.00"
+            Cursor="Hand"
+            FontSize="18"
+            Foreground="Red"
+            MouseDown="lblErrorMsg_MouseDown"
+            ToolTip="Click here to clear the overdraft protection transfer message"
+            Visibility="Hidden" />
         <Label
             Grid.Row="2"
             HorizontalAlignment="Center"

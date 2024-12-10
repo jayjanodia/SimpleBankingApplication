@@ -8,9 +8,10 @@ namespace Libraries
 {
     public class Account
     {
-
-        public event EventHandler<string> TransactionApprovedEvent;
-        public event EventHandler<decimal> OverdraftEvent;
+        // Raise Events
+        public event EventHandler<string>? TransactionApprovedEvent;
+        // public event EventHandler<decimal> OverdraftEvent;
+        public event EventHandler<OverdraftEventArgs>? OverdraftEvent;
 
         public int AccountNumber { get; set; }
         public decimal Balance { get; private set; } // dealing with money, decimal is precise
@@ -44,12 +45,13 @@ namespace Libraries
         /// <param name="amount"></param>
         /// <param name="backupAccount">If user does not have enough money in their checking account, check to see if they have enough money in the savings account and extract money from there</param>
         /// <returns></returns>
-        public bool MakePayment(string paymentName, decimal amount, Account backupAccount = null)
+        public bool MakePayment(string paymentName, decimal amount, Account? backupAccount = null)
         {
             if (Balance >= amount)
             {
                 _transactions.Add($"Withdrew {string.Format("{0:C2}", amount)} for {paymentName}");
                 Balance -= amount;
+                // Trigger the event
                 TransactionApprovedEvent?.Invoke(this, paymentName);
                 return true;
             }
@@ -62,6 +64,17 @@ namespace Libraries
                     if ((backupAccount.Balance + Balance) >= amount)
                     {
                         decimal amountNeeded = amount - Balance;
+                        OverdraftEventArgs args = new OverdraftEventArgs(amountNeeded, "Extra Info");
+                        OverdraftEvent?.Invoke(this, args);
+
+                        if (args.DenyOverdraft)
+                        {
+                            // We are denying the system from withdrawing money from the savings account
+                            _transactions.Add($"Failed to withdraw {string.Format("{0:C2}", amount)} for {paymentName}, not enough money");
+                            TransactionApprovedEvent?.Invoke(this, paymentName);
+                            return false;
+                        }
+
                         bool overdraftSucceeded = backupAccount.MakePayment("Overdraft Protection", amountNeeded);
 
                         if (!overdraftSucceeded)
@@ -75,12 +88,12 @@ namespace Libraries
                         _transactions.Add($"Withdrew {string.Format("{0:C2}", amount)} for {paymentName}");
                         Balance -= amount;
                         TransactionApprovedEvent?.Invoke(this, paymentName);
-                        OverdraftEvent?.Invoke(this, amountNeeded);
                         return true;
                     }
                     else
                     {
                         _transactions.Add($"Failed to withdraw {string.Format("{0:C2}", amount)} for {paymentName}, neither checkings nor savings accounts have sufficient funds");
+                        backupAccount.MakePayment($"Could not withdraw {amount:C2} for {paymentName}, missing {(backupAccount.Balance - amount):C2}", amount);
                         TransactionApprovedEvent?.Invoke(this, paymentName);
                         return false;
                     }

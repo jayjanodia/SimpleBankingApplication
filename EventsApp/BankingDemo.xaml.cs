@@ -18,7 +18,7 @@ namespace EventsApp
     public partial class BankingDemo : Window
     {
         Customer customer = new Customer();
-        private ATM _atmWindow; // Store a reference to the ATM window
+        private ATM? _atmWindow; // Store a reference to the ATM window
 
         public BankingDemo()
         {
@@ -26,6 +26,13 @@ namespace EventsApp
 
             LoadTestingData();
             WireUpForm();
+
+            this.Closing += BankingDemo_Closing;
+        }
+
+        private void BankingDemo_Closing(object? sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (_atmWindow != null) _atmWindow.Close();
         }
 
         private void LoadTestingData()
@@ -44,32 +51,49 @@ namespace EventsApp
         private void WireUpForm()
         {
             lblCustomer.Content = customer.CustomerName;
-            checkingTransactions.ItemsSource = customer.CheckingAccount.Transactions;
-            savingTransactions.ItemsSource = customer.SavingsAccount.Transactions;
-            lblCheckingBalance.Content = string.Format("{0:C2}", customer.CheckingAccount.Balance);
-            lblSavingBalance.Content = string.Format("{0:C2}", customer.SavingsAccount.Balance);
+            if (customer.CheckingAccount != null)
+            {
+                checkingTransactions.ItemsSource = customer.CheckingAccount.Transactions;
+                lblCheckingBalance.Content = string.Format("{0:C2}", customer.CheckingAccount.Balance);
 
-            customer.CheckingAccount.TransactionApprovedEvent += CheckingAccount_TransactionApprovedEvent;
-            customer.SavingsAccount.TransactionApprovedEvent += SavingsAccount_TransactionApprovedEvent;
-            customer.CheckingAccount.OverdraftEvent += CheckingAccount_OverdraftEvent;
+                // Listen to event
+                customer.CheckingAccount.TransactionApprovedEvent += CheckingAccount_TransactionApprovedEvent;
+                customer.CheckingAccount.OverdraftEvent += CheckingAccount_OverdraftEvent;
+            }
+            if (customer.SavingsAccount != null)
+            {
+                savingTransactions.ItemsSource = customer.SavingsAccount.Transactions;
+                lblSavingBalance.Content = string.Format("{0:C2}", customer.SavingsAccount.Balance);
+                customer.SavingsAccount.TransactionApprovedEvent += SavingsAccount_TransactionApprovedEvent;
+            }
         }
 
-        private void CheckingAccount_OverdraftEvent(object? sender, decimal e)
+        // Listener to OverdraftEvent
+        private void CheckingAccount_OverdraftEvent(object? sender, OverdraftEventArgs e)
         {
-            lblErrorMsg.Content = $"You had an overdraft protection transfer of {string.Format("{0:C2}", e)}";
+            lblErrorMsg.Content = $"You had an overdraft protection transfer of {string.Format("{0:C2}", e.AmountOverdrafted)}";
+            e.DenyOverdraft = denyOverdraft.IsChecked ?? false;
             lblErrorMsg.Visibility = Visibility.Visible;
         }
 
+        // Listener to TransactionApprovedEvent
         private void SavingsAccount_TransactionApprovedEvent(object? sender, string e)
         {
-            savingTransactions.ItemsSource = customer.SavingsAccount.Transactions;
-            lblSavingBalance.Content = string.Format("{0:C2}", customer.SavingsAccount.Balance);
+            if (customer.SavingsAccount != null)
+            {
+                savingTransactions.ItemsSource = customer.SavingsAccount.Transactions;
+                lblSavingBalance.Content = string.Format("{0:C2}", customer.SavingsAccount.Balance);
+            }
         }
 
+        // Listener to TransactionApprovedEvent
         private void CheckingAccount_TransactionApprovedEvent(object? sender, string e)
         {
-            checkingTransactions.ItemsSource = customer.CheckingAccount.Transactions;
-            lblCheckingBalance.Content = string.Format("{0:C2}", customer.CheckingAccount.Balance);
+            if (customer.CheckingAccount != null)
+            {
+                checkingTransactions.ItemsSource = customer.CheckingAccount.Transactions;
+                lblCheckingBalance.Content = $"{customer.CheckingAccount.Balance:C2}";
+            }
         }
 
         private void btnRecordTransactions_Click(object sender, RoutedEventArgs e)
@@ -78,6 +102,7 @@ namespace EventsApp
             if (_atmWindow == null || !_atmWindow.IsLoaded)
             {
                 _atmWindow = new ATM(customer);
+                _atmWindow.Owner = this;
                 _atmWindow.Show();
             }
             else
@@ -85,7 +110,7 @@ namespace EventsApp
                 // If an ATM instance is already open, bring it back into the foreground
                 if (_atmWindow.WindowState == WindowState.Minimized)
                 {
-                    _atmWindow.WindowState = WindowState.Normal; // Restore if minimizzed
+                    _atmWindow.WindowState = WindowState.Normal; // Restore if minimized
                 }
                 _atmWindow.Activate();
             }

@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:EventsApp"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="MainWindow"
+    Title="Banking Application"
     Width="800"
     Height="450"
     Background="#d7d7d7"
@@ -57,9 +57,24 @@
         <Label
             Grid.Row="3"
             Grid.Column="0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
             Content="Savings Balance"
             FontSize="18"
             FontWeight="Bold" />
+        <CheckBox
+            x:Name="denyOverdraft"
+            Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Margin="0,0,0,10"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            VerticalContentAlignment="Center"
+            Content="Prevent Overdraft"
+            FontSize="18"
+            IsChecked="false"
+            ToolTip="Checking this button will prevent an overdraft transfer from savings to checking account\nThe user will only be able to withdraw money if they have enough in their checking account" />
         <Label
             x:Name="lblSavingBalance"
             Grid.Row="3"
@@ -72,7 +87,6 @@
             Grid.RowSpan="2"
             Grid.Column="0"
             Grid.ColumnSpan="2"
-            Margin="0,-30,0,30"
             Padding="20,10,20,10"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
@@ -95,6 +109,7 @@
             FontSize="18"
             Foreground="Red"
             MouseDown="lblErrorMsg_MouseDown"
+            ToolTip="Click here to clear the overdraft protection transfer message"
             Visibility="Hidden" />
         <Label
             Grid.Row="1"
